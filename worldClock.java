@@ -12,7 +12,7 @@ public class worldClock extends JFrame {
         super("WorldClock");
         JPanel panel = new JPanel(new GridLayout(2, 1));
 
-        String[] world = {"Asia/Seoul", "JST", "America/Los_Angeles", "America/New_York", "Pacific/Honolulu"};
+        String[] world = TimeZone.getAvailableIDs();
         JComboBox<String> combo = new JComboBox<>(world);
         panel.add(combo);
 
